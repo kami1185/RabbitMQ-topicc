@@ -2,7 +2,8 @@
 const amqp = require('amqplib');
 
 // Reemplaza 'localhost' con la IP de la máquina donde corre RabbitMQ
-const RABBITMQ_URL = 'amqp://192.168.20.242'; 
+// const RABBITMQ_URL = 'amqp://192.168.20.242'; 
+const RABBITMQ_URL = 'amqp://guest:guest@localhost:5672/';
 
 async function enviarMensaje() {
     try {
